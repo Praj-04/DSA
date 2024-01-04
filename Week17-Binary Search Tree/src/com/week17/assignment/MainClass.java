@@ -1,5 +1,6 @@
 package com.week17.assignment;
 
+
 public class MainClass {
 
 	public static void main(String[] args) {
@@ -22,12 +23,28 @@ public class MainClass {
 		n5.left = n7;
 		n5.right = n8;
 
-FloorInBST f = new FloorInBST();
-System.out.println( f.floor(root, 2));
+//FloorInBST f = new FloorInBST();
+//System.out.println( f.floor(root, 2));
 
-CeilInBST c = new CeilInBST();
+//CeilInBST c = new CeilInBST();
+//System.out.println(c.findCeil(root, 11));
 
-System.out.println(c.findCeil(root, 11));
+
+searchInBinaryTree s= new searchInBinaryTree();
+Node ans = s.searchBST(root, 10);
+inOrderTraversal(ans);
+		
+		
+
+	}
+
+	static void inOrderTraversal(Node root) {
+		if (root == null)
+			return;
+
+		inOrderTraversal(root.left);
+		System.out.print(root.data + " ");
+		inOrderTraversal(root.right);
 	}
 
 	static class Node {
