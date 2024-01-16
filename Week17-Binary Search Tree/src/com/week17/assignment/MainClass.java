@@ -1,5 +1,6 @@
 package com.week17.assignment;
 
+import java.util.ArrayList;
 
 public class MainClass {
 
@@ -30,11 +31,19 @@ public class MainClass {
 //System.out.println(c.findCeil(root, 11));
 
 
-searchInBinaryTree s= new searchInBinaryTree();
-Node ans = s.searchBST(root, 10);
-inOrderTraversal(ans);
+//searchInBinaryTree s= new searchInBinaryTree();
+//Node ans = s.searchBST(root, 10);
+//inOrderTraversal(ans);
 		
 		
+
+//		BSTElementsInGivenRange b= new BSTElementsInGivenRange();
+//		ArrayList<Integer> ans=b.printInRange(root, 5, 10);
+//		System.out.println(ans);
+		
+		
+		MinAbsoluteDifference m = new MinAbsoluteDifference();
+		System.out.println(m.getMinimumDifference(root));
 
 	}
 
