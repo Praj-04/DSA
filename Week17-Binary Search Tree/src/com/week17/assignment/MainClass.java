@@ -7,11 +7,11 @@ public class MainClass {
 	public static void main(String[] args) {
 
 		Node n1 = new Node(8);
-		Node n2 = new Node(3);
+		Node n2 = new Node(14);
 		Node n3 = new Node(10);
 		Node n4 = new Node(1);
 		Node n5 = new Node(6);
-		Node n6 = new Node(14);
+		Node n6 = new Node(3);
 		Node n7 = new Node(4);
 		Node n8 = new Node(7);
 
@@ -42,8 +42,17 @@ public class MainClass {
 //		System.out.println(ans);
 		
 		
-		MinAbsoluteDifference m = new MinAbsoluteDifference();
-		System.out.println(m.getMinimumDifference(root));
+//		MinAbsoluteDifference m = new MinAbsoluteDifference();
+//		System.out.println(m.getMinimumDifference(root));
+		
+	
+		//Time Complexity here is O(h)
+		RecoverBST r = new RecoverBST();
+		inOrderTraversal(root);
+		r.recoverBST(root);
+		System.out.println();
+		inOrderTraversal(root);
+		
 
 	}
 
